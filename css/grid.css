@@ -1,0 +1,39 @@
+
+/* HOME PAGE LAYOUT */
+#home-page {
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.featured{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 1rem;
+
+}
+.country1 {
+    grid-column: 1/2;
+}
+
+#ft-title {
+    grid-column: 1/-1;
+}
+/* END OF HOME PAGE LAYOUT */
+
+
