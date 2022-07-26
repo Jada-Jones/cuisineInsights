@@ -1,21 +1,21 @@
 
 /** HOME PAGE LAYOUT **/
-#home-page {
+body {
     display: grid;
     grid-template-areas: 
     'header'
     'main'
     'footer' ;
 }
-#home-page > header {
+ header {
     grid-area: header;
 }
 
-#home-page > main {
+ main {
     grid-area: main;
 }
 
-#home-page > footer {
+ footer {
     grid-area: footer;
 }
 
