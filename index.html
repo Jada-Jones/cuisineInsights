@@ -9,6 +9,8 @@
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/grid.css" rel="stylesheet">
+   
+    
 
     <!-- Write your comments here -->
 
@@ -23,20 +25,27 @@
 
     <header>
 
-        <div class="main-nav">
-
-            <img src="images/logo.png" alt="Cuisine Insights" class="logo" id="header-img">
-
+            
+        
             <nav>
-                <ul class="nav-links">
-                    <li class="active"> <a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li> <a href="allCountries.html">All Countries</a></li>
-                    <li> <a href="contactUs.html">Contact</a></li>
+                <div>
+                    <img src="images/logo.png" alt="Cuisine Insights" class="logo" id="header-img">
+                </div>
+                
+                <ul class="nav-links" id="nav-links">
+                    <li class="active nav-item"> <a href="index.html">Home</a></li>
+                    <li class="nav-item"> <a href="about.html">About</a></li>
+                    <li class="nav-item"> <a href="allCountries.html">All Countries</a></li>
+                    <li class="nav-item"> <a href="contact.html">Contact</a></li>
+            
                 </ul>
+                <div class="menu" id="toggleButton">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
             </nav>
-
-        </div>
+            
     </header>
 
     <main>
@@ -58,24 +67,20 @@
             <div id="ft-title"><h3>Featured Countries</h3>
                 <hr>
             </div>
-            <div id= "country1" class="card">
-                <a href="#">
-                    <img src="images/England.png" alt="England">
-                </a>
+            <div id= "country1" class="card label">
+                <a href="#"><img src="images/England.png" alt="England"></a>
+                <a href="#"><h6>England</h6></a>
                 
             </div>
 
-            <div id= "country2"class="card">
-                <a href="#">
-                    <img src="images/SKorea.png" alt="Korea">
-                </a>
+            <div id= "country2"class="card label">
+                <a href="#"><img src="images/SKorea.png" alt="Korea"> </a>
+                <a href="#"><h6>Korea</h6></a>
             </div>
             
-            <div id= "country3" class="card">
-                <a href="#">
-                    <img src="images/Italy.png" alt="Italy">
-
-                </a>
+            <div id= "country3" class="card label">
+                <a href="#"><img src="images/Italy.png" alt="Italy"></a>
+                <a href="#"><h6>Italy</h6></a>
             </div>
             
         </section>
@@ -99,8 +104,10 @@
         </div>
     </footer>
 
+
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
 
+</body>
+    <script src="js/script.js"></script>
 </html>

@@ -21,22 +21,27 @@
 <body >
 
     <header>
-
-        <div class="main-nav">
-
-            <img src="images/logo.png" alt="Cuisine Insights" class="logo" id="header-img">
-
-            <nav>
-                <ul class="nav-links">
-                    <li > <a href="index.html">Home</a></li>
-                    <li> <a href="about.html">About</a></li>
-                    <li class="active"> <a href="allCountries.html">All Countries</a></li>
-                    <li> <a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    </header>
+ 
+        <nav>
+            <div>
+                <img src="images/logo.png" alt="Cuisine Insights" class="logo" id="header-img">
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li class=" nav-item"> <a href="index.html">Home</a></li>
+                <li class="nav-item"> <a href="about.html">About</a></li>
+                <li class="active nav-item"> <a href="allCountries.html">All Countries</a></li>
+                <li class="nav-item"> <a href="contact.html">Contact</a></li>
+        
+            </ul>
+            <div class="menu" id="toggleButton">
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+                <div class="menu-line"></div>
+            </div>
+        </nav>
+        
+</header>
 
     <main>
         <div id="Allcountries-header">
@@ -100,5 +105,5 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
-
+<script src="js/script.js"></script>
 </html>
