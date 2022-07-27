@@ -66,24 +66,14 @@ li, a {
 /**  END OF HEADER **/
 
 /** HOME **/
-.hero {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
-
-
-    
-    height: 300px;
-    margin-top: 10px;
-   /*  margin-left: 30px;
-    margin-right: 30px;
-    box-sizing: border-box;
-    
-    border: 30px solid #b2978f;
-   border-top: 3px solid #9cbbd6; 
-    border-bottom: 80px solid #b2978f ;  */
+.hero-image {
+    margin-top: 20px;
+    background-color: #edeae1;
+    height: 350px;
+     
+     
 }
+
 #compass {
     width: 80px;
     margin-top: 20px;
