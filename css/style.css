@@ -15,6 +15,7 @@ html, body {
 /** HEADER **/
 nav{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center; 
     background : #c6b3ab;
@@ -28,6 +29,8 @@ li, a {
 }
 
 .logo {
+    position: relative;
+    top:-30px;
     width: 160px;
     object-fit: fill;
     display:block;
@@ -36,7 +39,13 @@ li, a {
 }
 
 .nav-links {
+    width: 100%;
+    text-align:center;
+    position: relative;
+    top:-60px;
+    display:none;
     list-style: none;
+    z-index: 10;
   
     
     
@@ -46,14 +55,22 @@ li, a {
 }
 
 .nav-links li {
-    display: inline-block;
-    padding: 0px 20px;
+    display: block;
+    padding: 20px 10px;
     background-color: #c6b3ab;
+    border-top: 1px solid #917863;
 
 }
 
+.nav-links li a {
+    display: block;
+}
+
 .menu {
-    display: none;
+    display: block;
+    position: absolute;
+    right:20px;
+    top: 60px;
 }
 .menu-line {
     width: 20px;
@@ -62,16 +79,25 @@ li, a {
     margin-bottom: 4px;
 }
 
+.activate {
+    display:block;
+}
+
 
 /**  END OF HEADER **/
 
 /** HOME **/
 .hero-image {
-    margin-top: 20px;
-    background-color: #edeae1;
-    height: 350px;
+    margin-top: 8px;
+    height: 400px;
+    
+
      
-     
+}
+#hero{
+    max-height: 100%;
+    width:100%;
+    object-fit:cover;
 }
 
 #compass {
@@ -82,7 +108,7 @@ li, a {
 #quote {
     font-size: 20pt ;
     font-style: italic;
-    margin-top: 55px;
+    margin: 12px;
     text-align: center;      
 }
 
@@ -161,30 +187,55 @@ footer {
 
 
 /** ABOUT PAGE **/
+
 #side-panel {
-    height: 800px;
-    width: 250px;
-    margin-left: 20px;
+    height: 700px;
+    width: 40%;
+    max-width: 350px;
+    margin-left: 10px;
+    margin-top: 45px;
     background-color: #917863;
     
-    position:relative;
-    top: -90px;
-    z-index: 1;
 
-   
-
+    
+  
+    
 }
-#about {
+
+#about-panel {
    background-color: #f8f6f3;
     border: 10px solid #74331F;
     padding: 20px;
-    margin-left: 135px;
-    margin-right: 250px;
-
+    margin-left: 120px;
+    margin-right: 30px;
+    justify-self: center;
+    margin-bottom: -150px;
+    
+      
     position: relative;
-    top: 100px;  
+    top: -600px; bottom:0;
     z-index: 5;
+    max-width: 900px; 
 }
+
+ #about h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #bfac9d;
+}
+
+ #statement{
+    font-size: 18px;
+}
+#phrase{
+    padding-top: 50px;
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+}  
+
+
 
 /** END OF ABOUT PAGE **/
 
@@ -240,8 +291,10 @@ footer {
     #contactForm{
         width:100%;
         height:100%;
+      
         
     }
+    
 
     form{
         max-width: 550px;
@@ -255,14 +308,16 @@ footer {
     }
 
     form h1 {
-        margin:0;
-        text-align: center;
     
+        text-align: center;
+        padding-bottom: 10px;
+        border-bottom: 4px solid #bfac9d;
+       
         
     }
     
     #contactForm p {
-        margin-top: 20px;
+        margin-top: 30px;
         text-align:center;
         font-weight: bold;
     }
@@ -315,66 +370,57 @@ footer {
 
 
 
-        /************** MEDIA QUERIES **************/
+        /************** MEDIA QUERY **************/
 
-/**Phone**/
-@media all and (max-width: 480px) {
+/**Medium**/
+
+@media all and (min-width: 600px) {
+
+    /** HEADER **/
     nav{
-      flex-direction: column;
+      flex-direction: row;
        
     }
   .menu {
-    display: block;
-    position: absolute;
-    right:20px;
-    top: 60px;
+    display: none;
+
     }
     .logo {
-        position: relative;
-        top:-30px;
+        position: unset;
+        top:unset;
     }
 
     .nav-links li {
-        display: block;
-        padding: 20px 10px;
-        border-top: 1px solid #917863;
+        display: inline-block;
+        padding: 0px 20px;
+        border-top: none;
         
     
     }
     .nav-links li a {
-        display: block;
+        display: inline;
     }
 
     .nav-links {
-        width: 100%;
-        text-align:center;
-        position: relative;
-        top:-60px;
-        display:none;
-    }
-
-    .activate {
+        width: unset;
+        text-align:unset;
+        position: unset;
+        top:unset;
         display:block;
     }
 
+      /** END OF HEADER **/
+
+
     
 
-
+    #quote {
+        margin: 55px;
+    }
+    
 
 
 }
 
  
      
-        
-  
-
-
-/**Tablet**/
-@media only screen and (max-width: 768px) {
-
-
-}
-    
-@media only screen and (max-width: px) {
-

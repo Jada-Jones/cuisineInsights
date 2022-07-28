@@ -19,13 +19,15 @@ body {
     grid-area: footer;
 }
 
+
+
 /** HOME PAGE **/
 
 
 .featured {
     padding: 15px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     margin-top: 60px;
     margin-bottom: 50px;
     gap: 1rem;
@@ -38,4 +40,40 @@ body {
 /** END OF HOME PAGE **/
 
 
+ /************** MEDIA QUERIES **************/
+
+
+/* *Medium*/ 
+@media  all and (min-width: 600px) {
+    .featured {
+        
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    
+    #ft-title {
+        grid-column: 1/-1;
+    }
+
+    #country3{
+        grid-column: 1/-1;
+        max-width:400px;
+        justify-self: center;
+    }
+   
+}
+
+
+/**Large**/
+@media all and (min-width: 1000px) {
+    .featured {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #country3{
+        grid-column: unset;
+        
+    }   
+}
 
